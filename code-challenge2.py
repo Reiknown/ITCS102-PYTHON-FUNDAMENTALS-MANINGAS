@@ -1,21 +1,26 @@
-halaga = eval(input("Ilagay ang halagang ide-deposito: "))
+halaga = eval(input("\t\t\t\tIlagay ang halagang ide-deposito: "))
 
-print("Narito ang paghahati gamit ang denominasyon sa Pilipinas:")
+print("\tNarito ang paghahati gamit ang denominasyon sa Pilipinas:")
 
 # 1000
 libohan = halaga // 1000 
 halaga = halaga % 1000
-print("\t\t\t\t\t\t\t", libohan, "- ₱1000")
+print("\t\t\t\t\t\t\t\t", libohan, "- ₱1000")
 
 # 500
 limandaanan = halaga // 500
 halaga = halaga % 500
-print("\n\t\t\t\t\t\t", limandaanan, "- ₱500")
+print("\n\t\t\t\t\t\t\t", limandaanan, "- ₱500")
+
+# 200
+dalawandaanan = halaga // 200
+halaga = halaga % 200
+print("\n\t\t\t\t\t\t", dalawandaanan, "- 200")
 
 # 100
-daanan = halaga // 100
+isandaanan = halaga // 100
 halaga = halaga % 100
-print("\n\t\t\t\t\t", daanan, "- ₱100")
+print("\n\t\t\t\t\t", isandaanan, "- ₱100")
 
 # 50
 limampuan = halaga // 50
