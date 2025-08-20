@@ -1,0 +1,10 @@
+balance = 500
+withdrawal = 1500
+b = 3
+a = 3
+name1 = 'hanniel'
+name2 = 'Hanniel'
+#print(balance < withdrawal)
+#print(b >= a)
+#print(name1 == name2)
+print(name1 != name2)
