@@ -1,4 +1,4 @@
-print("⏳ COUNTDOWN TIMER SIMULATOR")
+print("⏳COUNTDOWN TIMER SIMULATOR")
 number = int(input("Enter the starting number for countdown: "))
 
 print("\nCountdown started:")
