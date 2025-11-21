@@ -31,6 +31,7 @@ while True:
 
 # search
     elif choice == 'b':
+        os.system('cls')
         print("PRINTING STUDENT RECORD")
 
         for id, record in student_records.items():
@@ -58,6 +59,7 @@ while True:
                 print("====================================")
             break
         continue
+
     elif choice == 'd':
         os.system('cls')
         print("DELETE EXISTING RECORD")
@@ -80,10 +82,12 @@ while True:
         continue
 
     elif choice == 'e':
+        os.system('cls')
         print(" STUDENT RECORD ")
         print(" ============================= ")
 
         search_id = input("Input ID to search ---> ").lower()
+
         for id in student_records.keys():
             if search_id in student_records.keys():
                 print("====================================")
@@ -110,6 +114,7 @@ while True:
                 print("====================================")
             break
         continue
+
     elif choice == 'f':
         os.system('cls')
         print("Export Student Record")
@@ -125,7 +130,7 @@ while True:
         os.system('cls')
         print("Import Student Record")
                 # file name , read / write
-        with open('student_record.json', 'w') as new_file:
+        with open('student_record.json', 'r') as new_file:
             student_json = json.load(new_file)
         
         student_records = student_json
@@ -133,6 +138,10 @@ while True:
 
         continue
 
-    elif choice == 'g':
+    elif choice == 'h':
         print("System Exit")
         break
+
+    else:
+        print("\nINVALID CHOICE, please RE-ENTER YOUR CHOICE")
+        continue
