@@ -1,4 +1,5 @@
 import os
+import json
 
 os.system('cls')
 print("STUDENT INFORMATION SYSTEM ")
@@ -9,7 +10,7 @@ print("----------------------------------------------\n")
 student_records = {}
 
 while True:
-    print("SELECT FROM THE OPTIONS BELOW \n A- Add Information \n B- Print All Record \n C- Search Student Record \n D- Delete a Student Record \n E- Edit Sutdnet Record \n F- Export Data \n G- Exit")
+    print("SELECT FROM THE OPTIONS BELOW \n A- Add Information \n B- Print All Record \n C- Search Student Record \n D- Delete a Student Record \n E- Edit / Modify Student Record \n F- Export Student Recrod \n G- Import Student Record \n\n X - Exit")
     choice = input("Your choice            ->   ").lower()
     
     if choice == 'a':
@@ -22,10 +23,9 @@ while True:
         last_name = input("Input student last name --> ").upper()
         course = input("Input student course --> ").upper()
         email = input("Input student email address --> ")
-        isSingle = input("Are your single? (True or False): ")
 
         # adding record to our dictionary
-        student_records[student_id] = [first_name, last_name, course, email, isSingle ]
+        student_records[student_id] = [first_name, last_name, course, email]
         print("DATA SAVED")
         continue
 
@@ -56,7 +56,7 @@ while True:
                 print("====================================")
                 print("\n\nNO RECORD FOUND")
                 print("====================================")
-
+            break
         continue
     elif choice == 'd':
         os.system('cls')
@@ -79,13 +79,60 @@ while True:
                 print("====================================")
         continue
 
-    elif choice == 'p':
-        for i,j in student_records.items():
-            print(f"CODE - {i} STORED INFORMATION ---> {j}")
-        continue
     elif choice == 'e':
+        print(" STUDENT RECORD ")
+        print(" ============================= ")
+
+        search_id = input("Input ID to search ---> ").lower()
+        for id in student_records.keys():
+            if search_id in student_records.keys():
+                print("====================================")
+                print("\n\nRECORD FOUND")
+                print("====================================")
+                # print the record of search stduent
+                for i in student_records[search_id]:
+                    print(f"-- {i}")
+
+                first_name = input("Input NEW student first name --> ").upper()
+                last_name = input("Input NEW student last name --> ").upper()
+                course = input("Input NEW student course --> ").upper()
+                email = input("Input NEW student email address --> ")
+
+                student_records[search_id][0] = first_name
+                student_records[search_id][1] = last_name
+                student_records[search_id][2] = course
+                student_records[search_id][3] = email
+
+                print("DATA UPDATED")
+            else:
+                print("====================================")
+                print("\n\nNO RECORD FOUND")
+                print("====================================")
+            break
+        continue
+    elif choice == 'f':
+        os.system('cls')
+        print("Export Student Record")
+                # file name , read / write
+        with open('student_record.json', 'w') as new_file:
+            json.dump(student_records, new_file, indent=4)
+
+        print("DATA EXPORTED TO JSON")
+
+        continue
+
+    elif choice == 'g':
+        os.system('cls')
+        print("Import Student Record")
+                # file name , read / write
+        with open('student_record.json', 'w') as new_file:
+            student_json = json.load(new_file)
+        
+        student_records = student_json
+        print("DATA IMPORTED TO JSON")
+
+        continue
+
+    elif choice == 'g':
         print("System Exit")
         break
-    else:
-        print("\nINVALID CHOICE, please RE-ENTER YOUR CHOICE ")
-        continue
