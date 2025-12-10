@@ -20,7 +20,7 @@ def code_challenge2():
   # 200
   dalawandaanan = halaga // 200
   halaga = halaga % 200
-  print("\n\t\t\t\t\t\t", dalawandaanan, "- 200")
+  print("\n\t\t\t\t\t\t", dalawandaanan, "- ₱200")
 
   # 100
   isandaanan = halaga // 100
@@ -35,7 +35,7 @@ def code_challenge2():
   # 20
   dalawampuan = halaga // 20
   halaga = halaga % 20
-  print("\n\t\t\t", dalawampuan, "- 20")
+  print("\n\t\t\t", dalawampuan, "- ₱20")
 
   # 10
   sampuan = halaga // 10
@@ -65,14 +65,13 @@ def code_challenge3():
 
   #Checking
   if yourusername == username and yourpassword == password:
-	  print('Access Granted')
+    print('Access Granted')
   else:
-	  print('Acces Denied')
-
+    print('Access Denied')
 
 def code_challenge4():
   number = int(input("Input a number: "))
   if number % 2 == 0:
-	  print(number, "is an even number")
+    print(number, "is an even number")
   else:
-	  print(number, "is an odd number")
+    print(number, "is an odd number")
