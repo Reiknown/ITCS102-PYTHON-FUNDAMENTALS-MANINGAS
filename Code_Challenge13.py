@@ -25,7 +25,7 @@ for e in range(3):
 for g in range(3):
     for i in range(2):
         print(" ", end=" ")
-    print("|", end=" ")
+    print("*", end=" ")
     print(" ", end=" ")
-    print("|", end=" ")
+    print("*", end=" ")
     print()
