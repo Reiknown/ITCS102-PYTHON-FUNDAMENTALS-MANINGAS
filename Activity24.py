@@ -13,4 +13,3 @@ greater('MANINGAS')
 summation(10)
 summation(9)
 summation(8)
-
