@@ -1,4 +1,4 @@
-# Washing Machine Logic\
+# Washing Machine Logic
 
 isDirty = True #booleanm variable to initialize the loop
 
