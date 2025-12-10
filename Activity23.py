@@ -20,4 +20,3 @@ for u in mi:
 print("\nReversed")
 for q in mi[::-1]:  #will print my name in reverse from n to j
     print(q)
-
