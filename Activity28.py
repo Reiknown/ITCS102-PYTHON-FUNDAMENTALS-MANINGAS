@@ -1,3 +1,5 @@
+# SNAKE GAME
+
 #Step 1 
 import pygame
 import time
