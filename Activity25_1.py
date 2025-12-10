@@ -1,13 +1,21 @@
 def activity1():
-    a = 5
-    print("the value of a is",a)
+    print("Hello World")
+    
 def activity2():
-    name = input("what is your name")
-    print(f"hi{name}welcome to the matrix")
+    name = input("What is your name....?")
+    print("Hi" , name , "Welcome to the Matrix")
+
 def activity3():
-    odd_sum = 0
-    for i in range(1,11,1):
-        num = eval(input("enter a number"))
-        if num % 2 ==1:
-            odd_sum += 1
-        print(f"there are {odd_sum} odd number")
+    print("Happy:)\t\tMonday")
+    print("\n\tBSIT1A \n from \n\tDLL")
+    print("The \n\tQuick \n\t\tBrown \n\t\t\tFox \n\t\t\t\tJumps \n\t\t\t\t\tOver \n\t\t\t\t\t\tThe \n\t\t\t\t\t\t\tLazy \n\t\t\t\t\t\t\t\tDog")
+
+def activity4():
+    name = input("Type your whole name ---> ")
+    print("Your name has" ,len(name), "characters")
+
+def activity5():
+    something = eval(input("Input something --> "))
+    print("The data type of something is",type(something))
+    answer = 6 + something
+    print("the answer is", answer)
