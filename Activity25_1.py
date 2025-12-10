@@ -2,7 +2,7 @@ def activity1():
     print("Hello World")
     
 def activity2():
-    name = input("What is your name....?")
+    name = input("What is your name....? ")
     print("Hi" , name , "Welcome to the Matrix")
 
 def activity3():
@@ -15,7 +15,7 @@ def activity4():
     print("Your name has" ,len(name), "characters")
 
 def activity5():
-    something = eval(input("Input something --> "))
+    something = eval(input("Input something (numbers only) --> "))
     print("The data type of something is",type(something))
     answer = 6 + something
     print("the answer is", answer)
