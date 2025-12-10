@@ -15,7 +15,7 @@ print("\n\t\t\t\t\t\t\t", limandaanan, "- ₱500")
 # 200
 dalawandaanan = halaga // 200
 halaga = halaga % 200
-print("\n\t\t\t\t\t\t", dalawandaanan, "- 200")
+print("\n\t\t\t\t\t\t", dalawandaanan, "- ₱200")
 
 # 100
 isandaanan = halaga // 100
@@ -30,7 +30,7 @@ print("\n\t\t\t\t", limampuan, "- ₱50")
 # 20
 dalawampuan = halaga // 20
 halaga = halaga % 20
-print("\n\t\t\t", dalawampuan, "- 20")
+print("\n\t\t\t", dalawampuan, "- ₱20")
 
 # 10
 sampuan = halaga // 10
