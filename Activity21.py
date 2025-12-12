@@ -10,6 +10,8 @@ while isDirty == True:
         continue
     elif confirm == 'no':
         print('cycle stops')
+        break
     else:
         print("invalid choice")
         continue
+
