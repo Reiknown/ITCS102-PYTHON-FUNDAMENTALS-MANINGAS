@@ -18,7 +18,7 @@
 
 [Activity 9](Activity09.py) Using logical operators like and, or, not.
 
-[Activity 10](Activity10.py) Ajeepney fare calculator that checks for discounts.
+[Activity 10](Activity10.py) A jeepney fare calculator that checks for discounts.
 
 [Activity 11](Activity11.py) Checking temperature using if else and elif.
 
@@ -72,7 +72,7 @@
 
 [Code Challenge 8](Code_Challenge08.py) Making a multiplication table.
 
-[Code Challenge 9](Code_Challenge09.py) A countdown timer using sleep.
+[Code Challenge 9](Code_Challenge09.py) A countdown timer simulator/a countdown timer using sleep.
 
 [Code Challenge 10](Code_Challenge10.py) Diamond pattern top part.
 
